@@ -1,0 +1,12 @@
+{
+  "name": "lighthouse-reports-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/casca/lighthouse-reports-parser.git",
+  "author": "casca <8927157+casca@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^1.7.2",
+    "axios": "^0.19.2"
+  }
+}
