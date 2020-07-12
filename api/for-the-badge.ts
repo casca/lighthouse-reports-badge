@@ -20,7 +20,7 @@ export default async (req: NowRequest, res: NowResponse) => {
     const metrics = ['accessibility', 'best-practices', 'performance', 'pwa', 'seo'];
 
     const percentages: { [key: string]: number } = metrics.reduce(
-      (r, m) => ({ ...r, [m]: +categories?.[m]?.score }),
+      (r, m) => ({ ...r, [m]: +(categories && categories[m] && categories[m].score) }),
       {},
     );
 
