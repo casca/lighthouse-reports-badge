@@ -37,6 +37,10 @@ export default async (req: NowRequest, res: NowResponse) => {
     percentagesStr.average = formatPercentage(
       metrics.reduce((s, m) => s + percentages[m], 0) / metrics.length,
     );
+    percentagesStr['average-without-pwa'] = formatPercentage(
+      (percentages['accessibility'] + percentages['best-practices'] + percentages['seo']) / 3
+    );
+    
     res.status(200).json(percentagesStr);
   } catch (err) {
     res.status(200).json({ error: err.message });
