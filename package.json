@@ -8,7 +8,7 @@
   "dependencies": {
     "@vercel/node": "^1.7.2",
     "axios": "^0.21.1",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "prettier": "^2.2.0"
